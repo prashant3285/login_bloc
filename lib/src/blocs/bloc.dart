@@ -1,5 +1,5 @@
 import 'dart:async';
-import '../validators/validator.dart';
+import 'validator.dart';
 
 class Bloc extends Object with Validator {
   final _email = new StreamController<String>();
@@ -16,5 +16,3 @@ class Bloc extends Object with Validator {
     _password.close();
   }
 }
-
-final bloc = Bloc();
